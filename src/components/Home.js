@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Home.css';
-import apiImage from '../assets/api.jpg';
+import apiImage from '../assets/api.png';
 import dbImage from '../assets/db.png';
 
 const Home = () => {
