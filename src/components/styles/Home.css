@@ -19,7 +19,7 @@ body {
 /* Hero Section */
 .hero-section {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
     width: 100%;
     margin-bottom: 40px;
 }
@@ -50,7 +50,6 @@ body {
     margin-bottom: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 1200px;
 }
 
 .feature-content {
@@ -63,7 +62,6 @@ body {
 .feature-image {
     width: 40%;
     height: 200px;
-    background-image: url('/assets/api.png'); /* Ensure correct path */
     background-size: contain;
     background-position: center;
     border-radius: 10px;
@@ -95,7 +93,6 @@ body {
     margin-bottom: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 1200px;
 }
 
 .insights-content {
@@ -133,7 +130,6 @@ body {
 .insights-image {
     width: 40%;
     height: 200px;
-    background-image: url('/assets/db.png'); /* Ensure correct path */
     background-size: contain;
     background-position: center;
     border-radius: 10px;
