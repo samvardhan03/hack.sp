@@ -5,13 +5,16 @@ const Report = () => {
     const [productName, setProductName] = useState('');
     const [category, setCategory] = useState('');
 
-    const handleDownload = () => {
-        
+    const handleGenerateReport = () => {
         const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
+
+        // Create an invisible anchor element and trigger a download
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'your-file.pdf'; // You can name the file here if needed
+        link.download = 'report.pdf'; // Specify the file name
+        document.body.appendChild(link);
         link.click();
+        document.body.removeChild(link);
     };
 
     return (
@@ -33,9 +36,10 @@ const Report = () => {
                     onChange={(e) => setCategory(e.target.value)}
                 />
             </div>
-            <button onClick={handleDownload}>Generate Report</button>
+            <button onClick={handleGenerateReport}>Generate Report</button>
         </div>
     );
 };
 
 export default Report;
+
