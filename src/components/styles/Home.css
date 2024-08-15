@@ -25,23 +25,22 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5em;
+    font-size: 4em; /* Increased font size */
     margin: 0;
     font-weight: bold;
     color: #b39ddb; /* Pastel purple */
 }
 
 .hero-subtitle {
-    font-size: 1.5em;
+    font-size: 2em; /* Increased font size */
     margin-top: 10px;
     color: #b39ddb; /* Pastel purple */
 }
 
 .hero-description {
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increased font size */
     margin-top: 10px;
 }
-
 /* Feature Section */
 .feature-section {
     background: #002b5c;
