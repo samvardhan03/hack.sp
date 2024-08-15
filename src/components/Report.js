@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import jsPDF from 'jspdf';
 import './styles/Report.css';
 
 const Report = () => {
     const [productName, setProductName] = useState('');
     const [category, setCategory] = useState('');
 
-    const generatePDF = () => {
-        const doc = new jsPDF();
-        doc.text(`Product Name: ${productName}`, 10, 10);
-        doc.text(`Category: ${category}`, 10, 20);
-        doc.save(`${productName}_report.pdf`);
+    const handleDownload = () => {
+        const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'report.pdf';
+        link.click();
     };
 
     return (
@@ -32,7 +32,7 @@ const Report = () => {
                     onChange={(e) => setCategory(e.target.value)}
                 />
             </div>
-            <button onClick={generatePDF}>Generate Report</button>
+            <button onClick={handleDownload}>Generate Report</button>
         </div>
     );
 };
