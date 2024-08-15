@@ -19,9 +19,9 @@ body {
 /* Hero Section */
 .hero-section {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px; /* Increased padding for more space */
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin bottom */
 }
 
 .hero-title {
@@ -41,12 +41,13 @@ body {
     font-size: 1.5em; /* Increased font size */
     margin-top: 10px;
 }
+
 /* Feature Section */
 .feature-section {
     background: #002b5c;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    padding: 40px 20px; /* Increased padding for more space */
+    border-radius: 15px;
+    margin-bottom: 40px; /* Increased margin bottom */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 1200px;
@@ -60,8 +61,8 @@ body {
 }
 
 .feature-image {
-    width: 50%;
-    height: 200px;
+    width: 40%; /* Reduced image width */
+    height: auto; /* Maintain aspect ratio */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -73,7 +74,7 @@ body {
 }
 
 .feature-text h2 {
-    font-size: 2.2em;
+    font-size: 2.2em; /* Font size of heading */
     margin-bottom: 10px;
     color: #b39ddb; /* Pastel purple */
 }
@@ -88,9 +89,9 @@ body {
 /* Insights Section */
 .insights-section {
     background: #004080;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    padding: 40px 20px; /* Increased padding for more space */
+    border-radius: 15px;
+    margin-bottom: 40px; /* Increased margin bottom */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 1200px;
@@ -110,7 +111,7 @@ body {
 }
 
 .insights-text h2 {
-    font-size: 2.2em;
+    font-size: 2.2em; /* Font size of heading */
     margin-bottom: 10px;
     color: #b39ddb; /* Pastel purple */
 }
@@ -129,8 +130,8 @@ body {
 }
 
 .insights-image {
-    width: 50%;
-    height: 200px;
+    width: 40%; /* Reduced image width */
+    height: auto; /* Maintain aspect ratio */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
