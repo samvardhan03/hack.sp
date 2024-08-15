@@ -6,16 +6,22 @@ const Report = () => {
     const [category, setCategory] = useState('');
 
     const handleGenerateReport = () => {
-        // Replace with the URL of the PDF file you uploaded to GitHub
-        const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
+        // URL of the PDF file you uploaded to GitHub
+        const pdfUrl = 'https://github.com/your-username/your-repo/raw/main/path-to-your-file/report.pdf';
 
-        // Create an invisible anchor element and trigger a download
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.download = 'report.pdf'; // Specify the file name
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        fetch(pdfUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'report.pdf'; // Specify the file name
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(url); // Clean up the URL object
+            })
+            .catch(error => console.error('Error downloading the file:', error));
     };
 
     return (
