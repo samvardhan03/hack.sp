@@ -102,12 +102,19 @@ body {
 .insights-text {
     flex: 1;
     margin-right: 20px;
+    color: #fff; /* Text color set to white */
 }
 
 .insights-text h2 {
     font-size: 2.2em;
     margin-bottom: 20px;
     color: #b39ddb; /* Pastel purple */
+}
+
+.insights-text p {
+    font-size: 1.2em;
+    color: #fff; /* Set the specific text color to white */
+    margin-bottom: 20px;
 }
 
 .insights-list {
