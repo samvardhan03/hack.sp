@@ -1,21 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/Report.css';
 
 const Report = () => {
+    const [productName, setProductName] = useState('');
+    const [category, setCategory] = useState('');
+
+    // Function to handle file download
     const handleDownload = () => {
-        const fileUrl = 'https://github.com/yourusername/yourrepo/raw/main/public/report.pdf'; // Update with your actual URL
+        // Define the URL of the static PDF file hosted on GitHub
+        const pdfUrl = 'https://github.com/username/repository-name/path/to/your-file.pdf'; // Update this URL
+
+        // Create an anchor element and trigger a download
         const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = 'report.pdf'; // The name of the file to be downloaded
-        document.body.appendChild(link);
+        link.href = pdfUrl;
+        link.download = `${productName || 'report'}_${category || 'report'}.pdf`;
         link.click();
-        document.body.removeChild(link);
     };
 
     return (
         <div className="report">
-            <h2>Download Report</h2>
-            <button onClick={handleDownload}>Download Report</button>
+            <h2>Generate Report</h2>
+            <div className="input-container">
+                <label>Product Name:</label>
+                <input
+                    type="text"
+                    value={productName}
+                    onChange={(e) => setProductName(e.target.value)}
+                />
+            </div>
+            <div className="input-container">
+                <label>Category:</label>
+                <input
+                    type="text"
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                />
+            </div>
+            <button onClick={handleDownload}>Generate Report</button>
         </div>
     );
 };
