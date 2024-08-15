@@ -19,35 +19,35 @@ body {
 /* Hero Section */
 .hero-section {
     text-align: center;
-    padding: 80px 20px; /* Increased padding for more space */
+    padding: 80px 20px;
     width: 100%;
-    margin-bottom: 40px; /* Increased margin bottom */
+    margin-bottom: 40px;
 }
 
 .hero-title {
-    font-size: 4em; /* Increased font size */
+    font-size: 4em;
     margin: 0;
     font-weight: bold;
-    color: #b39ddb; /* Pastel purple */
+    color: #b39ddb;
 }
 
 .hero-subtitle {
-    font-size: 2em; /* Increased font size */
+    font-size: 2em;
     margin-top: 10px;
-    color: #b39ddb; /* Pastel purple */
+    color: #b39ddb;
 }
 
 .hero-description {
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1.5em;
     margin-top: 10px;
 }
 
 /* Feature Section */
 .feature-section {
     background: #002b5c;
-    padding: 40px 20px; /* Increased padding for more space */
+    padding: 40px 20px;
     border-radius: 15px;
-    margin-bottom: 40px; /* Increased margin bottom */
+    margin-bottom: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 1200px;
@@ -61,10 +61,10 @@ body {
 }
 
 .feature-image {
-    width: 40%; /* Reduced image width */
-    height: 200px; /* Fixed height for consistency */
-    background-image: url('../assets/api.png'); /* Ensure correct path */
-    background-size: cover;
+    width: 40%;
+    height: 200px;
+    background-image: url('/assets/api.png'); /* Ensure correct path */
+    background-size: contain;
     background-position: center;
     border-radius: 10px;
 }
@@ -75,9 +75,9 @@ body {
 }
 
 .feature-text h2 {
-    font-size: 2.2em; /* Font size of heading */
+    font-size: 2.2em;
     margin-bottom: 10px;
-    color: #b39ddb; /* Pastel purple */
+    color: #b39ddb;
 }
 
 .feature-list {
@@ -90,9 +90,9 @@ body {
 /* Insights Section */
 .insights-section {
     background: #004080;
-    padding: 40px 20px; /* Increased padding for more space */
+    padding: 40px 20px;
     border-radius: 15px;
-    margin-bottom: 40px; /* Increased margin bottom */
+    margin-bottom: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 1200px;
@@ -108,18 +108,18 @@ body {
 .insights-text {
     flex: 1;
     margin-right: 20px;
-    color: #fff; /* Text color set to white */
+    color: #fff;
 }
 
 .insights-text h2 {
-    font-size: 2.2em; /* Font size of heading */
+    font-size: 2.2em;
     margin-bottom: 10px;
-    color: #b39ddb; /* Pastel purple */
+    color: #b39ddb;
 }
 
 .insights-text p {
     font-size: 1.2em;
-    color: #fff; /* Set the specific text color to white */
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -131,10 +131,10 @@ body {
 }
 
 .insights-image {
-    width: 40%; /* Reduced image width */
-    height: 200px; /* Fixed height for consistency */
-    background-image: url('../assets/db.png'); /* Ensure correct path */
-    background-size: cover;
+    width: 40%;
+    height: 200px;
+    background-image: url('/assets/db.png'); /* Ensure correct path */
+    background-size: contain;
     background-position: center;
     border-radius: 10px;
 }
