@@ -6,6 +6,7 @@ const Report = () => {
     const [category, setCategory] = useState('');
 
     const handleGenerateReport = () => {
+        // Replace with the URL of the PDF file you uploaded to GitHub
         const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
 
         // Create an invisible anchor element and trigger a download
@@ -42,4 +43,3 @@ const Report = () => {
 };
 
 export default Report;
-
