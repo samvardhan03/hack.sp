@@ -62,7 +62,8 @@ body {
 
 .feature-image {
     width: 40%; /* Reduced image width */
-    height: auto; /* Maintain aspect ratio */
+    height: 200px; /* Fixed height for consistency */
+    background-image: url('../assets/api.jpg'); /* Ensure correct path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -131,7 +132,8 @@ body {
 
 .insights-image {
     width: 40%; /* Reduced image width */
-    height: auto; /* Maintain aspect ratio */
+    height: 200px; /* Fixed height for consistency */
+    background-image: url('../assets/db.png'); /* Ensure correct path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
