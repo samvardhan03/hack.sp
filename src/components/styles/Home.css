@@ -63,7 +63,7 @@ body {
 .feature-image {
     width: 40%; /* Reduced image width */
     height: 200px; /* Fixed height for consistency */
-    background-image: url('../assets/api.jpg'); /* Ensure correct path */
+    background-image: url('../assets/api.png'); /* Ensure correct path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
