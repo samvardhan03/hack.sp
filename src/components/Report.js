@@ -6,8 +6,7 @@ const Report = () => {
     const [category, setCategory] = useState('');
 
     const handleGenerateReport = () => {
-        // URL of the PDF file you uploaded to GitHub
-        const pdfUrl = 'https://github.com/your-username/your-repo/raw/main/path-to-your-file/report.pdf';
+        const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
 
         fetch(pdfUrl)
             .then(response => response.blob())
