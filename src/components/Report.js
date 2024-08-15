@@ -1,3 +1,4 @@
+// Report.js
 import React, { useState } from 'react';
 import './styles/Report.css';
 
@@ -5,27 +6,19 @@ const Report = () => {
     const [productName, setProductName] = useState('');
     const [category, setCategory] = useState('');
 
-    const handleGenerateReport = async () => {
-        const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
-
-        try {
-            const response = await fetch(pdfUrl);
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'report.pdf'; // Specify the file name
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url); // Clean up the URL object
-        } catch (error) {
-            console.error('Error downloading the file:', error);
-            alert('Failed to download the report. Please try again later.');
-        }
+    const handleDownload = () => {
+        // URL of the PDF file
+        const pdfUrl = 'https://github.com/samvardhan03/sparkathon/raw/main/public/Report.pdf';
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'Report.pdf'; // Suggested file name for download
+        // Append the link to the body
+        document.body.appendChild(link);
+        // Programmatically click the link to trigger the download
+        link.click();
+        // Remove the link from the body
+        document.body.removeChild(link);
     };
 
     return (
@@ -47,7 +40,7 @@ const Report = () => {
                     onChange={(e) => setCategory(e.target.value)}
                 />
             </div>
-            <button onClick={handleGenerateReport}>Generate Report</button>
+            <button onClick={handleDownload}>Download Report</button>
         </div>
     );
 };
