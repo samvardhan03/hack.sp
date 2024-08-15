@@ -1,5 +1,7 @@
 import React from 'react';
 import './styles/Home.css';
+import apiImage from '../assets/api.jpg';
+import dbImage from '../assets/db.png';
 
 const Home = () => {
     return (
@@ -12,7 +14,7 @@ const Home = () => {
 
             <section className="feature-section">
                 <div className="feature-content">
-                    <div className="feature-image"></div>
+                    <div className="feature-image" style={{ backgroundImage: `url(${apiImage})` }}></div>
                     <div className="feature-text">
                         <h2>Efficient Data Management & API Handling</h2>
                         <ul className="feature-list">
@@ -33,7 +35,7 @@ const Home = () => {
                             <li><strong>Custom Reports:</strong> Generate detailed reports by selecting product categories or entering specific product names. These reports offer AI-driven marketing suggestions and visual insights for strategic decisions.</li>
                         </ul>
                     </div>
-                    <div className="insights-image"></div>
+                    <div className="insights-image" style={{ backgroundImage: `url(${dbImage})` }}></div>
                 </div>
             </section>
         </div>
