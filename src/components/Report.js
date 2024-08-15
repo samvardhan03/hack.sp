@@ -5,22 +5,27 @@ const Report = () => {
     const [productName, setProductName] = useState('');
     const [category, setCategory] = useState('');
 
-    const handleGenerateReport = () => {
+    const handleGenerateReport = async () => {
         const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
 
-        fetch(pdfUrl)
-            .then(response => response.blob())
-            .then(blob => {
-                const url = window.URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = 'report.pdf'; // Specify the file name
-                document.body.appendChild(a);
-                a.click();
-                a.remove();
-                window.URL.revokeObjectURL(url); // Clean up the URL object
-            })
-            .catch(error => console.error('Error downloading the file:', error));
+        try {
+            const response = await fetch(pdfUrl);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'report.pdf'; // Specify the file name
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url); // Clean up the URL object
+        } catch (error) {
+            console.error('Error downloading the file:', error);
+            alert('Failed to download the report. Please try again later.');
+        }
     };
 
     return (
