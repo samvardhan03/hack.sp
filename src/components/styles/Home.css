@@ -45,16 +45,19 @@ body {
 /* Feature Section */
 .feature-section {
     background: #002b5c;
-    padding: 30px 20px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
 }
 
 .feature-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .feature-image {
@@ -62,8 +65,7 @@ body {
     height: 200px;
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
-    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .feature-text {
@@ -73,7 +75,7 @@ body {
 
 .feature-text h2 {
     font-size: 2.2em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #b39ddb; /* Pastel purple */
 }
 
@@ -87,16 +89,19 @@ body {
 /* Insights Section */
 .insights-section {
     background: #004080;
-    padding: 30px 20px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
 }
 
 .insights-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .insights-text {
@@ -107,7 +112,7 @@ body {
 
 .insights-text h2 {
     font-size: 2.2em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #b39ddb; /* Pastel purple */
 }
 
@@ -129,7 +134,7 @@ body {
     height: 200px;
     background-size: cover;
     background-position: center;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /* Animations */
