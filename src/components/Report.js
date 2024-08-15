@@ -5,15 +5,12 @@ const Report = () => {
     const [productName, setProductName] = useState('');
     const [category, setCategory] = useState('');
 
-    // Function to handle file download
     const handleDownload = () => {
-        // Define the URL of the static PDF file hosted on GitHub
-        const pdfUrl = 'https://github.com/username/repository-name/path/to/your-file.pdf'; // Update this URL
-
-        // Create an anchor element and trigger a download
+        
+        const pdfUrl = 'https://github.com/samvardhan03/sparkathon/blob/main/public/Report.pdf';
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = `${productName || 'report'}_${category || 'report'}.pdf`;
+        link.download = 'your-file.pdf'; // You can name the file here if needed
         link.click();
     };
 
